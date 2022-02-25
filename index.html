@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="assets/css/classes.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@900&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body class="main-bg">
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1 onclick="getElementById('close-menu').checked = false;">
+        <a href="#intro" class="logo">M</a>
+      </h1>
+
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false;">
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#top3">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="menu-spacing"></div>
+
+  <section id="intro" class="intro main-bg section">
+    <div class="intro-content main-content">
+      <div class="intro-text-content">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe culpa ratione, error maiores vitae recusandae ipsum nam provident accusantium laborum, magni nobis quas tempora repudiandae? Iusto sit incidunt suscipit quos?</p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/artificial-intelligence.svg" alt="Logo Artificial intelligence.">
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="grid-one purple-bg section">
+    <div>
+      <div class="main-content grid-one-content">
+        <h2>Random Pics</h2>
+        <legend></legend>
+        <div class="grid">
+          <div class="gallery-img">
+            <img src="https://source.unsplash.com/random/360x360" alt="random image from unsplash" />
+
+          </div>
+          <div class="gallery-img">
+            <img src="https://source.unsplash.com/random/360x360?2" alt="random image from unsplash" />
+          </div>
+          <div class="gallery-img">
+            <img src="https://source.unsplash.com/random/360x360?3" alt="random image from unsplash" />
+          </div>
+          <div class="gallery-img">
+            <img src="https://source.unsplash.com/random/360x360?4" alt="random image from unsplash" />
+
+          </div>
+          <div class="gallery-img">
+            <img src="https://source.unsplash.com/random/360x360?5" alt="random image from unsplash" />
+          </div>
+          <div class="gallery-img">
+            <img src="https://source.unsplash.com/random/360x360?6" alt="random image from unsplash" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="top3" class="top3-content main-bg section">
+    <div class="main-content main-content">
+      <h2 class="grid-main-heading">Projects</h2>
+      <p class="grid-description">Short description.</p>
+      <div class="grid">
+        <article>
+          <h3>Project</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quae voluptatibus dolor ex aliquam
+            exercitationem </p>
+        </article>
+        <article>
+          <h3>And Another</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, assumenda! Temporibus aliquid voluptatem
+            illum natus nisi, laudantium nesciunt accusamus dicta, suscipit ab dolor exercitationem soluta veritatis
+            commodi sint! Autem, ea.</p>
+        </article>
+        <article>
+          <h3>And another one</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quae voluptatibus dolor ex aliquam
+            exercitationem molestiae qui nostrum sapiente error</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="intro secondary-bg section">
+    <div class="intro-content main-content">
+      <div class="intro-text-content">
+        <h2>Contact</h2>
+        <p>Feel confortable to send your message or a feedback. I'll be very grateful 😁</p>
+      </div>
+      <div class="contact-img">
+        <img src="assets/img/contact.svg" alt="Logo contact.">
+      </div>
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend></legend>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder=" Your first name">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your e-mail.">
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+          </div>
+          <div class="form-group full-width">
+            <button type="submit">Send Message</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer" class="footer purple-bg">
+    <p><a rel="nofollow" target="_blank" href="https://twitter.com/kykvszs">Feito com <span class="heart">❤</span> por Matheus Del Canale.</a></p>
+  </footer>
+
+  <a class="back-to-top" href="#home">❱</a>
+</body>
+
+</html>
